@@ -50,6 +50,15 @@ function GalleryItem(props){
             </div>
         )
     }
+    return (
+        <div className="App">
+            <SearchBar handleSearch={handleSearch} />
+            {message}
+            <Suspense fallback={<h1>Loading...</h1>}>
+                // <Gallery data={data} />
+            </Suspense>
+        </div>
+    )
     
 
     return (
